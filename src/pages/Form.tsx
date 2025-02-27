@@ -11,7 +11,6 @@ export default function Form() {
     register,
     control,
     formState: { errors },
-    reset,
   } = useForm({
     resolver: zodResolver(FormSchema),
     defaultValues: {
@@ -27,7 +26,7 @@ export default function Form() {
     },
   });
 
-  const { fields, append, remove } = useFieldArray({
+  const { fields } = useFieldArray({
     control,
     name: "Loan History",
   });
