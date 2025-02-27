@@ -1,0 +1,44 @@
+.input-custom {
+  @apply border border-[#800] outline-none focus:ring-[#800] focus:ring-2 px-2 py-2.5 rounded-md;
+}
+
+.wrapper-custom {
+  @apply flex flex-col gap-1 relative mb-3 lg:mb-0;
+}
+
+.error-message {
+  @apply absolute -bottom-9 text-sm text-red-500
+}
+
+.label-custom {
+  @apply font-bold w-fit
+}
+
+.poppins{
+  font-family: Poppins, sans-serif;
+}
+
+.inter{
+  font-family: Inter, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@import "tailwindcss"
